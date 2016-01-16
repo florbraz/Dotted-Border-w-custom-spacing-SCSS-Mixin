@@ -7,12 +7,12 @@
 @mixin dottedBorder($color: #8f8f8f, $orientation: horizontal, $position: top, $spacing: 5px, $size: 1px) {
   background-position: $position;
   @if $orientation == horizontal {
-    background-image: linear-gradient(to right, $color $size/$spacing, rgba(255,255,255,0) 0%);
+    background-image: linear-gradient(to right, $color $size/$spacing * 100%, rgba(255,255,255,0) 0%);
     background-size: $spacing $size;
     background-repeat: repeat-x;
   }
   @else {
-    background-image: linear-gradient($color $size/$spacing, rgba(255,255,255,0) 0%);
+    background-image: linear-gradient($color $size/$spacing * 100%, rgba(255,255,255,0) 0%);
     background-size: $size $spacing;
     background-repeat: repeat-y;
   }
