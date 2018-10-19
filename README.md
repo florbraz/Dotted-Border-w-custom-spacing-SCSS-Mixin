@@ -3,13 +3,13 @@
 Ever wanted to increase spacing between the dots of border-style:dotted? Now you can (easy SCSS implementation)!  :) 
 This mixin will help you implement spaced dotted borders in a quick and easy way.
 
-##Usage
+## Usage
 
-`@include dottedBorder`
+`@include dottedBorder();`
 
 Will add the border to element's top, dots measuring 1px and 5px spacing between dots.
 
-##Documentation
+## Documentation
 
 To change default settings, use `@include dottedBorder($color: #000, $size:2px)`
 
@@ -22,7 +22,7 @@ To change default settings, use `@include dottedBorder($color: #000, $size:2px)`
 | $size        | CSS measure unit (`5px`, `1em` etc.) | `1px`         |
 
 
-##Todo:
+## Todo:
 * Support for multiple borders (all around, 2+ orientations)
 * Add SASS mixin
 
